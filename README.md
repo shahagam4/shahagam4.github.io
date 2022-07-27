@@ -1,3 +1,10 @@
+References:
+1. https://www.c-sharpcorner.com/article/how-to-deploy-react-application-on-github-pages/
+2. https://create-react-app.dev/docs/getting-started/
+
+Template Used: https://technext.github.io/meetme/contact.html
+Resume style webite template: https://technext.github.io/resume-bootstrap4/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
