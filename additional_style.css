@@ -1,0 +1,53 @@
+.research-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 100%; /* Increased max-width of the card */
+    margin: 20px;
+    display: flex;
+}
+
+.research-card img {
+    max-width: 500px; /* Increased max-width of the image */
+    max-height: 310px; /* Optional: you can also set max-height */
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.research-content {
+    text-align: left;
+}
+
+.research-content .title {
+    font-size: 20px; /* Slightly increased font size */
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000;
+}
+
+.research-content .conference {
+    font-size: 18px; /* Slightly increased font size */
+    margin: 5px 0;
+    color: #555;
+}
+
+.research-content .authors {
+    font-size: 16px; /* Slightly increased font size */
+    margin: 5px 0;
+    color: #777;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .research-card {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements */
+        max-width: 100%; /* Use full width */
+    }
+
+    .research-card img {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+        max-width: 100%;
+    }
+}
