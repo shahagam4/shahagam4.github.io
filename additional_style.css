@@ -51,3 +51,119 @@
         max-width: 100%;
     }
 }
+
+/* Overall Container */
+.mytabs_area {
+    padding: 30px 0;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Card Header (Accordion Header) */
+.card-header {
+    background: linear-gradient(90deg, #5e9ef7, #8cceff);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h5 {
+    margin: 0;
+}
+
+.card-header .btn-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.card-header .arrow {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    transition: transform 0.3s; /* Arrow rotation */
+}
+
+/* Rotate arrow when expanded */
+.card-header .collapsed .arrow {
+    transform: rotate(90deg);
+}
+
+/* Card Body (Content) */
+.card-body {
+    background-color: #f7faff; /* Light background for contrast */
+    padding: 15px 20px;
+    font-size: 0.9rem;
+}
+
+/* Entry Layout */
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.entry:last-child {
+    border-bottom: none;
+}
+
+.entry-left {
+    max-width: 70%; /* Restricts width to prevent overlap */
+}
+
+.entry-left p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #555; /* Subtle text color for role */
+}
+
+.entry-right {
+    font-size: 0.85rem;
+    color: #777;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #007bff; /* Match theme color */
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+    font-size: 0.75rem;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
